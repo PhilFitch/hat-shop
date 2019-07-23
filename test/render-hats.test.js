@@ -16,7 +16,7 @@ test('renders a hat', assert => {
         cost: 40,
     };
 
-    const expected = '<li class="fedora" title="Classic Noir"><h3>Fedora</h3><img src="assets/fedora.jpg"><p class="price">$75<button value="fedora">Add</button></p></li>';
+    const expected = '<li class="fedora" title="Classic Noir"><h3>Fedora</h3><img src="assets/fedora.jpg"><p class="price">$75.00<button value="fedora">Add</button></p></li>';
 
     const dom = renderHats(fedora);
     const html = dom.outerHTML;
