@@ -2,14 +2,16 @@
     background-color: aliceblue;
 }
 
+
 #hats li {
     list-style: none;
     border: 2px solid black;
-    border-radius: 20%;
+    border-radius: 100%;
     width: 150px;
     height: 200px;
     text-align: center;
-    background-color: white;
+    background: white;
+    
 }
 
 #hats li img {
