@@ -2,9 +2,15 @@
     background-color: aliceblue;
 }
 
+#hats {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 #hats li {
     list-style: none;
+    position: relative;
     border: 2px solid black;
     border-radius: 100%;
     width: 150px;
