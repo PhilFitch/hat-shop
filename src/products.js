@@ -1,3 +1,4 @@
+
 import hats from './hats.js';
 import renderHats from './render-hats.js';
 

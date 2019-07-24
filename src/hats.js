@@ -1,12 +1,11 @@
-
 const fedora = {
     code: 'fedora',
     name: 'Fedora',
     image: 'assets/fedora.jpg',
     description: 'Classic Noir',
     category: 'felt',
-    price: 75,
-    cost: 40,
+    price: 75.00,
+    cost: 40.00,
 };
 
 const trilby = {
@@ -15,8 +14,8 @@ const trilby = {
     image: 'assets/trilby.png',
     description: 'For the Man in the Grey Flannel Suit.',
     category: 'tweed',
-    price: 70,
-    cost: 35,
+    price: 70.00,
+    cost: 35.00,
 };
 
 const panama = {
@@ -25,8 +24,8 @@ const panama = {
     image: 'assets/panama.jpg',
     description: 'Think: Carmen Sandiego',
     category: 'straw',
-    price: 65,
-    cost: 25,
+    price: 65.00,
+    cost: 25.00,
 };
 
 const bowler = {
@@ -35,8 +34,8 @@ const bowler = {
     image: 'assets/bowler.jpg',
     description: 'The Tramp',
     category: 'felt',
-    price: 70,
-    cost: 40,
+    price: 70.00,
+    cost: 40.00,
 };
 
 const newsboy = {
@@ -45,8 +44,8 @@ const newsboy = {
     image: 'assets/newsboy.jpg',
     description: 'Extra! Extra!',
     category: 'tweed',
-    price: 60,
-    cost: 30,
+    price: 60.00,
+    cost: 30.00,
 };
 
 const flatCap = {
@@ -55,8 +54,8 @@ const flatCap = {
     image: 'assets/flatCap.jpg',
     description: 'Perfect for a drive in the county.',
     category: 'tweed',
-    price: 70,
-    cost: 35,
+    price: 70.00,
+    cost: 35.00,
 };
 
 const boater = {
@@ -65,8 +64,8 @@ const boater = {
     image: 'assets/boater.jpg',
     description: 'Punting on the lake, anyone?',
     category: 'straw',
-    price: 50,
-    cost: 20,
+    price: 50.00,
+    cost: 20.00,
 };
 
 const porkPie = {
@@ -75,8 +74,8 @@ const porkPie = {
     image: 'assets/porkPie.jpg',
     description: 'A beebop prerequisite.',
     category: 'felt',
-    price: 70,
-    cost: 30,
+    price: 70.00,
+    cost: 30.00,
 };
 
 const hats = [
