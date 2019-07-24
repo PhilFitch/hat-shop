@@ -24,5 +24,7 @@ export function getOrderTotal(hats, cart) {
         const lineTotal = getLineTotal(cart[i].quantity, hat.price);
         orderTotal += lineTotal;
     }
-    return orderTotal;
+    const usd = orderTotal.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+
+    return usd;
 }

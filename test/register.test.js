@@ -28,5 +28,5 @@ test ('returns order total', assert => {
     
     const orderTotal = getOrderTotal(hats, cart);
 
-    assert.equal(orderTotal, 265.00);
+    assert.equal(orderTotal, '$265.00');
 });
