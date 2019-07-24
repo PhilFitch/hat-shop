@@ -12,7 +12,7 @@ test ('renders line item', assert => {
         quantity: 2,
     };
     const newsboy = findHat(hats, lineItem.code);
-    const expected = '<tr><td>Newsboy</td><td>2</td><td>$60.00</td><td>$120.00</td></tr>'
+    const expected = '<tr><td>Newsboy</td><td>2</td><td>$60.00</td><td>$120.00</td></tr>';
 
     const dom = renderLineItem(lineItem, newsboy);
     const html = dom.outerHTML;
