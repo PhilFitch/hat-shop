@@ -16,3 +16,13 @@ export function findHat(hats, code) {
     }
     return null;
 }
+
+export function getOrderTotal(hats, cart) {
+    let orderTotal = 0;
+    for(let i = 0; i < cart.length; i++) {
+        const hat = findHat(hats, cart[i].code);
+        const lineTotal = getLineTotal(cart[i].quantity, hat.price);
+        orderTotal += lineTotal;
+    }
+    return orderTotal;
+}

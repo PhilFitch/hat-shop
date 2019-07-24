@@ -1,6 +1,7 @@
 //import { getLineTotal } from '../src/register.js';
-import { findHat } from '../src/register.js';
+import { findHat, getOrderTotal } from '../src/register.js';
 import hats from '../src/hats.js';
+import cart from '../src/order.js';
 
 const test = QUnit.test;
 
@@ -21,4 +22,11 @@ test ('finds product', assert => {
     const foundHat = findHat(hats, code);
 
     assert.deepEqual(foundHat, expected);
+});
+
+test ('returns order total', assert => {
+    
+    const orderTotal = getOrderTotal(hats, cart);
+
+    assert.equal(orderTotal, 265.00);
 });
