@@ -41,8 +41,9 @@ test('returns empty array for cart', assert => {
 });
 
 test('orderHat updates cart in storage', assert => {
-    //const order = store.orderHat();
-    const order = store.orderHat('fedora');
+    store.orderHat('fedora');
+    
+    const order = store.getCart();
     const expected = [{
         code: 'fedora',
         quantity: 1,
@@ -50,3 +51,4 @@ test('orderHat updates cart in storage', assert => {
 
     assert.deepEqual(order, expected);
 });
+

@@ -36,7 +36,8 @@ const store = {
         this.save('cart', cart);
         
         return cart;
-    }
+    },
+    
 };
 
 export default store;
