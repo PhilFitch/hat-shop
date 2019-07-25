@@ -1,4 +1,4 @@
-//import { getLineTotal } from '../src/register.js';
+
 import { findHat, getOrderTotal } from '../src/register.js';
 import hats from '../src/hats.js';
 import cart from '../src/order.js';

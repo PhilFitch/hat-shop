@@ -1,7 +1,4 @@
 
-
-
-
 export function renderLineItem(cart, hat) {
     const tr = document.createElement('tr');
 

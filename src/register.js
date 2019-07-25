@@ -1,6 +1,3 @@
-// getLineTotal(quantity, price)
-// findProduct(products[], code)
-// getOrderTotal(cart[code, quantity], products[]) using above functions
 
 export function getLineTotal(quantity, price) {
     return Number((quantity * price).toFixed(2));
