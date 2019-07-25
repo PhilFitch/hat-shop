@@ -1,3 +1,5 @@
+import store from './store.js';
+
 function renderHats(hat) {
     const li = document.createElement('li');
     li.className = hat.code;
@@ -21,6 +23,9 @@ function renderHats(hat) {
     const button = document.createElement('button');
     button.textContent = 'Add';
     button.value = hat.code;
+    button.addEventListener('click', () => {
+        store.orderHat(hat.code);
+    });
     p.appendChild(button);
 
     li.appendChild(p);
