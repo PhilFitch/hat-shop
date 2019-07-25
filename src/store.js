@@ -45,6 +45,12 @@ const store = {
         
         return cart;
     },
+    getHat(code) {
+        const hats = this.listHats();
+        const hat = findHat(hats, code);
+
+        return hat;
+    },
 
 };
 

@@ -65,3 +65,19 @@ test('multiple orders updates quantity', assert => {
     assert.deepEqual(order, expected);
 });
 
+test('getHat returns a hat from storage', assert => {
+    
+    const hat = store.getHat('fedora');
+    const expected = {
+        code: 'fedora',
+        name: 'Fedora',
+        image: 'assets/fedora.jpg',
+        description: 'Classic Noir',
+        category: 'felt',
+        price: 75.00,
+        cost: 40.00,
+    };
+
+    assert.deepEqual(hat, expected);
+});
+
