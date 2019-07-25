@@ -1,6 +1,6 @@
 import store from './store.js';
 import { renderLineItem } from './render-line-item.js';
-import { findHat, getOrderTotal } from './register.js';
+import { getOrderTotal } from './register.js';
 
 const tbody = document.querySelector('tbody');
 const cart = store.getCart();
