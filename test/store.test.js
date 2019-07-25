@@ -52,3 +52,16 @@ test('orderHat updates cart in storage', assert => {
     assert.deepEqual(order, expected);
 });
 
+test('multiple orders updates quantity', assert => {
+    store.orderHat('fedora');
+    store.orderHat('fedora');
+
+    const order = store.getCart();
+    const expected = [{
+        code: 'fedora',
+        quantity: 2,
+    }];
+
+    assert.deepEqual(order, expected);
+});
+

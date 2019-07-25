@@ -1,4 +1,5 @@
 import hats from '../src/hats.js';
+import { findHat } from '../src/register.js';
 
 const store = {
     storage: window.localStorage,
@@ -28,16 +29,23 @@ const store = {
     },
     orderHat(code) {
         let cart = this.getCart();
-        const order = {
-            code: code,
-            quantity: 1,
-        };
-        cart.push(order);
+
+        let check = findHat(cart, code);
+
+        if(check) {
+            check.quantity++;
+        } else {
+            const order = {
+                code: code,
+                quantity: 1,
+            };
+            cart.push(order);
+        }
         this.save('cart', cart);
         
         return cart;
     },
-    
+
 };
 
 export default store;
