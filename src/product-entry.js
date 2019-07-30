@@ -1,6 +1,6 @@
 import store from './store.js';
 
-const form = getElementById('new-hat');
+const form = document.getElementById('new-hat');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -12,7 +12,7 @@ form.addEventListener('submit', (event) => {
         description: formData.get('description'),
         category: formData.get('category'),
         price: +formData.get('price'),
-        cost: +formData.get('cost');
+        cost: +formData.get('cost'),
     };
     store.addHat(newHat);
     alert('Hat Added!');
