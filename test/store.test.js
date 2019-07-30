@@ -81,3 +81,20 @@ test('getHat returns a hat from storage', assert => {
     assert.deepEqual(hat, expected);
 });
 
+test('addHat appends hat to storage', assert => {
+    const newHat = {
+        code: 'ball-cap',
+        name: 'Ball Cap',
+        image: 'assets/ball-cap.jpg',
+        description: 'Put Me In, Coach',
+        category: 'cotton',
+        price: 45.00,
+        cost: 12.00,
+    };
+
+    store.addHat(newHat);
+
+    const hats = store.listHats();
+
+    assert.deepEqual(hats[hats.length - 1], newHat);
+});

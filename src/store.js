@@ -51,6 +51,11 @@ const store = {
 
         return hat;
     },
+    addHat(newHat) {
+        const hatsList = store.listHats();
+        hatsList.push(newHat);
+        store.save('hats', hatsList);
+    }
 
 };
 

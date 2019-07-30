@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Hat</title>
+    <link rel="stylesheet" type="text/css" href="src/main.css">
+    <link rel="stylesheet" type="text/css" href="src/product-entry.css">
+</head>
+<body>
+        <nav>
+                <a href="./">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Shopping Cart</a>
+            </nav>
+    <header>
+        <h1>Phil's Hat Shop</h1>
+    </header>
+    <main>
+        <h2>Add a Hat</h2>
+
+        <form id="new-hat">
+            <p>
+                <label for="code">Code:</label>
+                <input id="code" required name="code" type="text">
+            </p>
+            <p>
+                <label for="name">Name:</label>
+                <input id="name" required name="name" type="text">
+            </p>
+            <p>
+                <label for="image">Image:</label>
+                <input id="image" required name="image" type="file">
+            </p>
+            <p>
+                <label for="description">Description:</label>
+                <input id="description" required name="description" type="text">
+            </p>
+            <p>
+                <label for="category">Category:</label>
+                <input id="category" required name="category" type="text">
+            </p>
+            <p>
+                <label for="price">Price:</label>
+                <input id="price" required name="price" type="number" step="1.00">
+            </p>
+            <p>
+                <label for="cost">Cost:</label>
+                <input id="cost" required name="cost" type="number" step="1.00">
+            </p>
+
+            <button>Add Hat</button>
+
+        </form>
+    </main>
+    <script src="src/product-entry.js" type="module"></script>
+</body>
+</html>
